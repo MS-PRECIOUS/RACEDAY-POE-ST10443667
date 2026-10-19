@@ -1,16 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using RaceDay_p2_ST10443667.models;
+using System.ComponentModel.DataAnnotations;
 
-namespace RaceDay_p2_ST10443667.models
+namespace RaceDay_p2_ST10443667.Models;
+
+public class Result
 {
-    public class Results
-    {
-        [Key]
-        public int ResultID { get; set; }
-        public TimeSpan FinishTime { get; set; }
-        public int? FinishingPosition {  get; set; }
+    [Key]
+    public int ResultId { get; set; }
+    public TimeSpan? FinishTime { get; set; }
+    public int? FinishingPosition { get; set; }
 
-        public int EnrolmentID {  get; set; }
-        public Enrolment Enrolment { get; set; } = null!;
-
-    }
+    public int EnrolmentId { get; set; }
+    public Enrolment Enrolment { get; set; } = null!;
 }
