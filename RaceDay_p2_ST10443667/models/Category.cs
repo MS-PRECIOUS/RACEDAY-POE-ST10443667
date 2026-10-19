@@ -7,5 +7,7 @@
 
         public int EventID {  get; set; }
         public Event Event { get; set; } = null!;
+
+        public ICollection<Enrolment> Enrolments { get; set; } = new List<Enrolment>();
     }
 }

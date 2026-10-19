@@ -12,5 +12,8 @@
 
         public int OrganiserID { get; set; }
         public User Organiser { get; set; } = null!;
+
+        public ICollection<Category> Categories { get; set; } = new List<Category>();
+        public ICollection<EventImage> eventImages { get; set; } = new List<EventImage>();
 }    }
 
